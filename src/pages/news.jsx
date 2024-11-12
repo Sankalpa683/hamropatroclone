@@ -1,5 +1,5 @@
 export default function Create() {
   return (
-    <div>Create</div>
+    <div>News</div>
   )
 }
