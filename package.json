@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "lucide-react": "^0.456.0",
+    "nepali-date-converter": "^3.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.1"
