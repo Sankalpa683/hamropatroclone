@@ -1,5 +1,14 @@
+/*  */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    /* Adjust according to the font weight */
+    font-style: normal;
+}
+
 body {
-    font-family: "Sour Gummy", sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
