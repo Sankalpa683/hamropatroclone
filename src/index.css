@@ -32,3 +32,10 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+#news p,
+span {
+    font-family: 'Gilroy_Light', sans-serif;
+    font-optical-sizing: auto;
+    font-style: medium;
+}
