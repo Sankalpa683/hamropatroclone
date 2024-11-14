@@ -63,47 +63,86 @@ const bulletinnews = [
     backgroundImage: "https://images.hamro-files.com/VgtLYgzEtCNhL6-v0Uj-lWByDe0=/300x300/smart/https://img.setoparty.com/uploads/posts/462565621_1018595219953300_7972512690194497473_n-1731468010.png",
     logoimage: "http://storage.googleapis.com/hamropatro-storage/assets/hamropatro.com/images/9508bb6d-17cd-4692-8e0c-b11b85c9f7dd.jpg",
     newsurl: "https://english.hamropatro.com/newsStory/-OBdFTD1SQoAvnRKITNv#-OBdFTD1SQoAvnRKITNv"
+  },
+  {
+    id: 8,
+    title: "ब्राजिलको सर्वोच्च अदालत परिसरमा विस्फोट",
+    backgroundImage: "https://images.hamro-files.com/VgtLYgzEtCNhL6-v0Uj-lWByDe0=/300x300/smart/https://img.setoparty.com/uploads/posts/462565621_1018595219953300_7972512690194497473_n-1731468010.png",
+    logoimage: "http://storage.googleapis.com/hamropatro-storage/assets/hamropatro.com/images/9508bb6d-17cd-4692-8e0c-b11b85c9f7dd.jpg",
+    newsurl: "https://english.hamropatro.com/newsStory/-OBdFTD1SQoAvnRKITNv#-OBdFTD1SQoAvnRKITNv"
+  },
+  {
+    id: 9,
+    title: "ब्राजिलको सर्वोच्च अदालत परिसरमा विस्फोट",
+    backgroundImage: "https://images.hamro-files.com/VgtLYgzEtCNhL6-v0Uj-lWByDe0=/300x300/smart/https://img.setoparty.com/uploads/posts/462565621_1018595219953300_7972512690194497473_n-1731468010.png",
+    logoimage: "http://storage.googleapis.com/hamropatro-storage/assets/hamropatro.com/images/9508bb6d-17cd-4692-8e0c-b11b85c9f7dd.jpg",
+    newsurl: "https://english.hamropatro.com/newsStory/-OBdFTD1SQoAvnRKITNv#-OBdFTD1SQoAvnRKITNv"
+  },
+  {
+    id: 10,
+    title: "ब्राजिलको सर्वोच्च अदालत परिसरमा विस्फोट",
+    backgroundImage: "https://images.hamro-files.com/VgtLYgzEtCNhL6-v0Uj-lWByDe0=/300x300/smart/https://img.setoparty.com/uploads/posts/462565621_1018595219953300_7972512690194497473_n-1731468010.png",
+    logoimage: "http://storage.googleapis.com/hamropatro-storage/assets/hamropatro.com/images/9508bb6d-17cd-4692-8e0c-b11b85c9f7dd.jpg",
+    newsurl: "https://english.hamropatro.com/newsStory/-OBdFTD1SQoAvnRKITNv#-OBdFTD1SQoAvnRKITNv"
+  },
+  {
+    id: 11,
+    title: "ब्राजिलको सर्वोच्च अदालत परिसरमा विस्फोट",
+    backgroundImage: "https://images.hamro-files.com/VgtLYgzEtCNhL6-v0Uj-lWByDe0=/300x300/smart/https://img.setoparty.com/uploads/posts/462565621_1018595219953300_7972512690194497473_n-1731468010.png",
+    logoimage: "http://storage.googleapis.com/hamropatro-storage/assets/hamropatro.com/images/9508bb6d-17cd-4692-8e0c-b11b85c9f7dd.jpg",
+    newsurl: "https://english.hamropatro.com/newsStory/-OBdFTD1SQoAvnRKITNv#-OBdFTD1SQoAvnRKITNv"
   }
 ]
-
 export default function Bulletin() {
   return (
-    <>
-      <section className="py-[30px] mx-4 lg:mx-0" id="bulletin">
-        <div className="flex flex-col max-w-7xl gap-4 mx-auto w-full flex-wrap">
-          <p className="font-medium text-lg/[18px]" id="bulletin_text">News Bulletin</p>
-          <div id="news-stories-wrapper no-scrollbar" className="flex items-center gap-1 justify-around flex-wrap">
-            {bulletinnews.map((item) => (
-              <div key={item.id}>
-                <a
-                  href={item.newsurl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="news-story-card block bg-cover bg-center h-[236px] w-[150px] rounded-[10px]"
-                  style={{
-                    backgroundImage: `url(${item.backgroundImage})`
-                  }}
-                >
-                  <div className="p-4 bg-black bg-opacity-50 rounded-[10px] space-y-16">
-                    <span className="text-white text-lg font-semibold">
-                      {item.title}
-                    </span>
-                    <div className="mt-2">
-                      <div className="flex items-center space-x-2">
-                        <img
-                          src={item.logoimage}
-                          alt="Source"
-                          className="w-6 h-6 rounded-[10px]"
-                        />
-                      </div>
+    <section className="py-[30px] mx-4 lg:mx-0" id="bulletin">
+      <div className="flex flex-col max-w-7xl gap-4 mx-auto w-full">
+        <p className="font-medium text-lg/[18px]" id="bulletin_text">News Bulletin</p>
+
+        {/* Swiper Wrapper */}
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={1}
+          breakpoints={{
+            120: { slidesPerView: 1, spaceBetween: 0 },
+            340: { slidesPerView: 2, spaceBetween: 2 },
+            478: { slidesPerView: 3, spaceBetween: 20 },
+            719: { slidesPerView: 4, spaceBetween: 30 },
+            982: { slidesPerView: 5, spaceBetween: 30 },
+            1008: { slidesPerView: 6, spaceBetween: 30 },
+            1024: { slidesPerView: 7, spaceBetween: 30 },
+            1228: { slidesPerView: 8, spaceBetween: 40 },
+          }}
+          className="w-full flex gap-2 justify-around"
+        >
+          {bulletinnews.map((item) => (
+            <SwiperSlide key={item.id} className=''>
+              <a
+                href={item.newsurl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="news-story-card block bg-cover bg-center h-[236px] w-[150px] rounded-[10px]"
+                style={{ backgroundImage: `url(${item.backgroundImage})` }}
+              >
+                <div className="p-4 bg-black bg-opacity-50 rounded-[10px] flex flex-col justify-between h-full">
+                  <span className="text-white text-lg font-semibold">
+                    {item.title}
+                  </span>
+                  <div className="mt-2">
+                    <div className="flex items-center space-x-2">
+                      <img
+                        src={item.logoimage}
+                        alt="Source"
+                        className="w-6 h-6 rounded-[10px]"
+                      />
                     </div>
                   </div>
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
-  )
+                </div>
+              </a>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+  );
 }

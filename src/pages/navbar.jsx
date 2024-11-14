@@ -4,7 +4,7 @@ import { Logs } from 'lucide-react';
 
 const Navbar = () => {
     return (
-        <section>
+        <section className='top-0 sticky z-50 bg-white'>
             <nav className="p-[15px] border flex justify-between lg:justify-around flex-wrap items-center">
                 <div className="flex gap-3 items-center">
                     <img src="https://www.hamropatro.com/images/hamropatro.png" alt="Hamro Patro" className="w-[42px] h-[42px]" />
