@@ -96,7 +96,7 @@ const fourthnews = [
 const news = () => {
   return (
     <>
-      <section className='py-[20px] bg-[#f7f7f7] mx-4 lg:mx-0' id='news'>
+      <section className='py-[20px] bg-[#f7f7f7] px-4 lg:px-0' id='news'>
         <div className='w-full mx-auto max-w-7xl'>
           <h1 className='uppercase font-medium text-[#a5282c]'>Latest News</h1>
           <div className='grid mt-4 gap-9 sm:gap-9 md:gap-7 lg:gap-6 xl:gap-5 grid-cols-1 py-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
