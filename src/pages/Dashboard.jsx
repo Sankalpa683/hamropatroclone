@@ -58,7 +58,7 @@ export default function Dashboard() {
                 </div>
               </div>
               <div className=" mx-auto">
-                <img src="https://www.hamropatro.com/images/rotating-ads//jyotish4.gif" className="w-[800px]" />
+                <img src="https://www.hamropatro.com/images/rotating-ads//recharge2.gif" className="w-[800px]" />
               </div>
             </div>
           </div>

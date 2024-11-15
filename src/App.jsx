@@ -5,6 +5,7 @@ import Search from './pages/search';
 import Bulletin from './pages/Bulletin'
 import Calander from './pages/calander-layout';
 import News from './pages/news'
+import Bottom from './pages/bottom';
 import Footer from './pages/footer'
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -20,6 +21,8 @@ function App() {
       <Calander />
       <hr />
       <News />
+      <hr />
+      <Bottom />
       <Footer />
     </main>
   );
