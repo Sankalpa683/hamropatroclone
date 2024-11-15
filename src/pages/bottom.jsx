@@ -17,7 +17,7 @@ const foreignExchangeData = [
 const bottom = () => {
     return (
         <>
-            <section className='py-[20px] bg-[#f7f7f7] px-4 lg:px-0' id='bottoms'>
+            <section className='py-8 bg-[#f7f7f7] px-4 lg:px-0' id='bottoms'>
                 <div className='w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
                     <div className=''>
                         <div className='mt-4'>
