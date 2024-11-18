@@ -1,6 +1,5 @@
-import React from 'react'
+import React from 'react';
 import Select from 'react-select'
-
 
 const options = [
     { value: 'Kartik', label: 'Kartik Snan Samapti' },
@@ -8,8 +7,10 @@ const options = [
     { value: 'Chaturthi', label: 'Chaturthi Shraddha' },
     { value: 'Gunla', label: 'Gunla Parwa Samapti' },
     { value: 'Dhanu', label: 'Dhanu Sankranti' },
-    { value: 'Khasti', label: 'Khasti Shraddha'},
+    { value: 'Khasti', label: 'Khasti Shraddha' },
 ]
+
+
 
 const search = () => {
     return (
@@ -20,7 +21,7 @@ const search = () => {
                         <p className='text-[#7b7873] text-xl'>Nepali Calendar 2081</p>
                     </div>
                     <div className='w-[100%] lg:w-[26%] z-50'>
-                        <Select options={options} className="w-full z-50" defaultValue={options[1]}/>
+                        <Select options={options} className="w-full z-50" defaultValue={options[1]} />
                     </div>
                 </div>
             </section>

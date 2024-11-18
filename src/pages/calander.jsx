@@ -1,6 +1,8 @@
-import React from 'react'
+import { React, useState, useEffect } from 'react'
 import { CirclePlus } from 'lucide-react';
+import axios from 'axios';
 
+import { ChevronLeft, ChevronRight, Grid, List } from 'lucide-react';
 
 const events = [
     {
@@ -171,6 +173,58 @@ const doctors = [
     }
 ];
 
+const months = [
+    {
+        id: 0,
+        name: "Baishak"
+    },
+    {
+        id: 1,
+        name: "Jeth"
+    },
+    {
+        id: 2,
+        name: "Asar"
+    },
+    {
+        id: 3,
+        name: "Saun"
+    },
+    {
+        id: 4,
+        name: "Badra"
+    },
+    {
+        id: 5,
+        name: "Asoj"
+    },
+    {
+        id: 6,
+        name: "Kartik"
+    },
+    {
+        id: 7,
+        name: "Mangshir"
+    },
+    {
+        id: 8,
+        name: "Poush"
+    },
+    {
+        id: 9,
+        name: "Magh"
+    },
+    {
+        id: 10,
+        name: "Falgun"
+    },
+    {
+        id: 11,
+        name: "Chaith"
+    }
+]
+
+
 
 const calander = () => {
     return (
@@ -184,9 +238,9 @@ const calander = () => {
                             <div className='overflow-y-scroll h-fit lg:h-[464px]'>
                                 {events.map((item) => (
                                     <>
-                                        <div className='my-3 flex justify-around w-full gap-2 '>
+                                        <div className='my-3 flex justify-around w-full gap-2'>
 
-                                            <div key={item.id} className='text-center bg-[#2282bc] flex flex-col items-center break-all text-white p-1'>
+                                            <div key={item.id} className='text-center bg-[#2282bc] p-[2px] rounded flex flex-col items-center text-white h-fit'>
                                                 {item.date}
                                             </div>
                                             <div className='break-all '>
@@ -216,9 +270,59 @@ const calander = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-3 w-full flex flex-col items-center text-center border'>
-                        <h2 className='text-[#b34141] mt-2 font-bold text-center'><span><a href="/posts" className="headderNew">Calander</a></span></h2>
+                    <div className="md:col-span-2 border bg-white p-4 rounded col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-3">
+                        <h2 className='text-[#b34141] pb-2 font-bold text-center'><span><a href="/posts" className="headderNew">Calender</a></span></h2>
+                        <hr />
+                        <div className="flex hidden flex-wrap justify-between items-center mb-4 shadoow h-fit">
+                            <div className="flex items-center space-x-2">
+                                <button className="px-3 py-1 bg-gray-200 rounded text-sm">Today</button>
+                                <button className="p-1 bg-gray-200 rounded"><Grid size={18} /></button>
+                                <button className="p-1 bg-gray-200 rounded"><List size={18} /></button>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <ChevronLeft size={18} />
+                                <select className="bg-gray-200 rounded px-2 py-1 text-sm">
+                                    <option>2081</option>
+                                </select>
+                                <select className="bg-gray-200 rounded px-2 py-1 text-sm">
+                                    {/* months */}
+                                    {months.map((item) => (
+                                        <>
+                                            <option key={item.id}>{item.name}</option>
+
+                                        </>
+                                    ))}
+                                </select>
+                                <ChevronRight size={18} />
+                            </div>
+                            <div className="text-sm text-red-600">२०८१ Kartik | Oct/Nov 2024</div>
+                        </div>
+                        <table className="w-full hidden border-collapse text-xs sm:text-sm h-fit ">
+                            <thead>
+                                <tr className="bg-gray-100">
+                                    {['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'].map(day => (
+                                        <th key={day} className="border p-2">{day}</th>
+                                    ))}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {[...Array(5)].map((_, weekIndex) => (
+                                    <tr key={weekIndex}>
+                                        {[...Array(7)].map((_, dayIndex) => (
+                                            <td key={dayIndex} className="border p-2 h-20 align-top">
+                                                <div>{weekIndex * 7 + dayIndex + 1}</div>
+                                                <div className="text-gray-600 text-xs">Event</div>
+                                            </td>
+                                        ))}
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
                     </div>
+
+                    {/* <div className='col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-3 w-full flex flex-col items-center text-center border'>
+                        <h2 className='text-[#b34141] mt-2 font-bold text-center'><span><a href="/posts" className="headderNew">Calander</a></span></h2>
+                    </div> */}
                     <div className='flex flex-col flex-wrap gap-4 w-full'>
                         <div className='grid grid-cols-2 gap-2'>
                             <div className='text-sm'>
