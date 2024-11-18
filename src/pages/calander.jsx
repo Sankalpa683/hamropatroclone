@@ -35,7 +35,18 @@ const events = [
         event: 'Mangal Chauthi Toilet Day',
         time: 'after 2 days'
     },
-
+    {
+        id: 5,
+        date: '26 Mangshir',
+        event: 'Mangal Chauthi Toilet Day',
+        time: 'after 2 days'
+    },
+    {
+        id: 6,
+        date: '26 Mangshir',
+        event: 'Mangal Chauthi Toilet Day',
+        time: 'after 2 days'
+    }
 ]
 const jyotishData = [
     {
@@ -235,12 +246,12 @@ const calander = () => {
                         <div className='p-[10px] border w-full'>
                             <h2 className='text-[#b34141] pb-2 font-bold text-center'><span><a href="/posts" className="headderNew">Upcomming Events</a></span></h2>
                             <hr />
-                            <div className='overflow-y-scroll h-fit lg:h-[464px]'>
+                            <div className='overflow-y-scroll h-[464px]'>
                                 {events.map((item) => (
                                     <>
                                         <div className='my-3 flex justify-around w-full gap-2'>
 
-                                            <div key={item.id} className='text-center bg-[#2282bc] p-[2px] rounded flex flex-col items-center text-white h-fit'>
+                                            <div key={item.id} className='text-center bg-[#2282bc] p-[5px] rounded flex flex-col items-center text-white h-fit'>
                                                 {item.date}
                                             </div>
                                             <div className='break-all '>
