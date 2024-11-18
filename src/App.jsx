@@ -3,7 +3,8 @@ import Navbar from './pages/navbar'
 import Dashboard from './pages/Dashboard'
 import Search from './pages/search';
 import Bulletin from './pages/Bulletin'
-import Calander from './pages/calander-layout';
+import Calander from './pages/calander';
+import Calanderss from './pages/calander-layout';
 import News from './pages/news'
 import Bottom from './pages/bottom';
 import Footer from './pages/footer'
