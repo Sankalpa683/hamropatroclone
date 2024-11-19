@@ -4,7 +4,7 @@ import Dashboard from './pages/Dashboard'
 import Search from './pages/search';
 import Bulletin from './pages/Bulletin'
 import Calander from './pages/calander';
-import Calanderss from './pages/calander-layout';
+import SaralPatroData from './pages/helloworld'
 import News from './pages/news'
 import Bottom from './pages/bottom';
 import Footer from './pages/footer'
@@ -22,6 +22,7 @@ function App() {
       <Calander />
       <hr />
       <News />
+      {/* <SaralPatroData /> */}
       <hr />
       <Bottom />
       <Footer />
