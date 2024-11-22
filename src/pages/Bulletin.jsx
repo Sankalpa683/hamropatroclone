@@ -120,7 +120,6 @@ export default function Bulletin() {
               <a
                 href={item.newsurl}
                 target="_blank"
-                rel="noopener noreferrer"
                 className="news-story-card block bg-cover bg-center h-[236px] w-[150px] rounded-[10px]"
                 style={{ backgroundImage: `url(${item.backgroundImage})` }}
               >
